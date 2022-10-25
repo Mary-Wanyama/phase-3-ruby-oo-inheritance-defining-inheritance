@@ -19,5 +19,19 @@ class Car < Vehicle
     def go
         "VRRROOOOOOOOOOOOOOOOOOOOOOOM!!!!!"
       end
-
+      def speak
+        puts 'hello'
+      end
 end
+
+class Bus < Vehicle
+    def walk 
+        puts 'slowy'
+    end
+end
+
+toyota = Car.new(12, 56)
+puts toyota.speak
+
+isuzu = Bus.new(5, 7)
+isuzu.walk
